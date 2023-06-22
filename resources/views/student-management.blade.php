@@ -5,26 +5,27 @@
         <h2>Student management</h2>
     <div class="student-form">
         <form action="/addStudent" method="POST">
+            @csrf
             <div class="form-row">
               <div class="form-group">
                 <label for="first_name">First Name:</label>
-                <input type="text" id="first_name" name="first_name" placeholder="Enter first name" required>
+                <input type="text" id="first_name" name="first_name" placeholder="Enter first name">
               </div>
               <div class="form-group">
                 <label for="last_name">Last Name:</label>
-                <input type="text" id="last_name" name="last_name" placeholder="Enter Last name" required>
+                <input type="text" id="last_name" name="last_name" placeholder="Enter Last name">
               </div>
               <div class="form-group">
                 <label for="sign">Sign:</label>
-                <input type="text" id="sign" name="sign" placeholder="temporary placeholder to sign" required>
+                <input type="text" id="sign" name="sign" placeholder="temporary placeholder to sign">
               </div>
               <div class="form-group">
                 <label for="group">Group Name:</label>
-                <input type="text" id="group" name="group" placeholder="Enter Group name" required>
+                <input type="text" id="group" name="group" placeholder="Enter Group name">
               </div>
               <div class="form-group">
                 <label for="age">Age:</label>
-                <input type="number" id="age" name="age" placeholder="Enter student age" required>
+                <input type="number" id="age" name="age" placeholder="Enter student age">
               </div>
             </div>  
             <button type="submit">Add Student</button>
