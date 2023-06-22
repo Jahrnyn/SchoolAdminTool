@@ -90,6 +90,7 @@ a:hover {
     text-decoration: underline;
 }
 
+/* Menu(?) buttons */
 .link-button {
     display: inline-block;
     padding: 12px 24px;
@@ -103,3 +104,52 @@ a:hover {
 .link-button:hover {
     background-color: #45a049;
 }
+
+/* Student register form */
+.student-form {
+    background-color: #333;
+    padding: 20px;
+    margin-bottom: 20px;
+    color: #fff;
+  }
+  
+  .student-form h2 {
+    margin-bottom: 10px;
+  }
+  
+  .form-row {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .form-group {
+    flex: 1;
+    margin-right: 10px;
+  }
+  
+  .student-form label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .student-form input,
+  .student-form select {
+    width: 90%;
+    padding: 8px;
+    margin-bottom: 10px;
+    background-color: #f2f2f2;
+    color: #333;
+  }
+  
+  .student-form button {
+    padding: 8px 20px;
+    background-color: #007bff;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .student-form button:hover {
+    background-color: #45a049;
+  }
