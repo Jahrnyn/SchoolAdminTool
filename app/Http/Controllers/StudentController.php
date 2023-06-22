@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\User;
 use Illuminate\Http\Request;
 
 class StudentController extends Controller
@@ -12,6 +13,7 @@ class StudentController extends Controller
             'first_name' => 'required',
             'last_name' => 'required',
         ]);
+        User::create($incomingFields);
         return 'Hello from adding function';
     }
 }

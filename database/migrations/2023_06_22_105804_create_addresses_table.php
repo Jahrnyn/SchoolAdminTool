@@ -13,6 +13,12 @@ return new class extends Migration
     {
         Schema::create('addresses', function (Blueprint $table) {
             $table->id();
+            $table->unsignedBigInteger('student_id');
+            $table->string('street_name', 250);
+            $table->string('street_number', 250);
+            $table->integer('zip');
+            $table->string('city', 250);
+            $table->integer('siblings_num');
             $table->timestamps();
         });
     }
