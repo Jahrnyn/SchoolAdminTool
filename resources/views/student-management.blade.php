@@ -4,7 +4,7 @@
     <section>
         <h2>Student management</h2>
     <div class="student-form">
-        <form action="#" method="post">
+        <form action="/addStudent" method="POST">
             <div class="form-row">
               <div class="form-group">
                 <label for="first_name">First Name:</label>

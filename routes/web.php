@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\homeController;
+use App\Http\Controllers\StudentController;
 
 /*
 |--------------------------------------------------------------------------
@@ -17,3 +18,5 @@ use App\Http\Controllers\homeController;
 Route::get('/', [homeController::class, "homepage"]);
 
 Route::get('/students', [homeController::class, "studentspage"]);
+
+Route::post('/addStudent', [StudentController::class, "addStudent"]);
