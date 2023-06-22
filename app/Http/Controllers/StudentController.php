@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Student;
+use App\Models\Students;
 use Illuminate\Http\Request;
 
 class StudentController extends Controller
@@ -12,8 +12,12 @@ class StudentController extends Controller
         $incomingFields = $request->validate([
             'first_name' => 'required',
             'last_name' => 'required',
+            'sign' => 'nullable',
+            'group' => 'required',
+            'age' => 'required|integer',
         ]);
-        Student::create($incomingFields);
+        
+        Students::create($incomingFields);
         return 'Hello from adding function';
     }
 }
